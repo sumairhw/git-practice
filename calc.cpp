@@ -21,6 +21,10 @@ void divide(){
 	cout << "Enter two numbers to divide : \t";
 	int a, b;
 	cin >> a >> b;
+	if(b == 0){
+		cout << "Invalid operation: cannot divide by zero\n";
+		return;
+	}
 	cout << "Quotient :\t" << a / b <<"\n";
 }
 
