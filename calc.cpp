@@ -69,6 +69,8 @@ int main(){
 			default:
 				exit(0);
 		}
+
+		cout << "have fun with neew feature\n";
 	}
 
 	return 0;
