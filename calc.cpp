@@ -31,12 +31,19 @@ void mul(){
 	cout << "Product :\t" << a * b <<"\n";
 }
 
+void power(){
+	cout << "Enter two numbers: \t";
+	int a, b;
+	cin >> a >> b;
+	cout << "Result :\t" << pow(a,b) <<"\n";
+}
+
 int main(){
 
 	int op;
 	while(true){
 
-		cout << "Please chooose operation:\n1: add\n2: multiply\n3: subtract\n4: divide\n";
+		cout << "Please chooose operation:\n1: add\n2: multiply\n3: subtract\n4: divide\n5: power\n";
 		cin >> op;
 	
 		switch(op){
@@ -51,6 +58,9 @@ int main(){
 				break;
 			case 4:
 				divide();
+				break;
+			case 5:
+				power();
 				break;
 			default:
 				exit(0);
